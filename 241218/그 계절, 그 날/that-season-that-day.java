@@ -11,6 +11,12 @@ public class Main {
         int[] lastDay = new int[]{31,28,31,30,31,30,31,31,30,31,30,31};
         if(y%4==0){
             lastDay[1] = 29;
+            if(y%100==0){
+                lastDay[1] = 28;
+                if(y%400==0){
+                    lastDay[1] = 29;
+                }
+            }
         }
         if(d<=lastDay[m-1]){
             return getSeason(m);
