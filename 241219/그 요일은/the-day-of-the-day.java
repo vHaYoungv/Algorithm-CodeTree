@@ -7,9 +7,14 @@ public class Main {
         
         int day1 = getDays(m1, d1);
         int day2 = getDays(m2, d2);
-        int ifMon = A.equals("Mon")? 0:0;
+        int days = day2-day1;
+        int startDay = yoil.get(A);
 
-        System.out.println((day2-day1)/7 + ifMon);
+        int cnt = 0;
+        if (days-startDay>=0){
+            cnt = (days-startDay)/7 + 1;
+        }
+        System.out.println(cnt);
     }
 
     private static int getDays(int m, int d){
@@ -22,12 +27,12 @@ public class Main {
     }
 
     private static Map<String, Integer> yoil = new HashMap<String, Integer>(){{
-            put("Mon", 1);
-            put("Tue", 2);
-            put("Wed", 3);
-            put("Thu", 4);
-            put("Fri", 5);
-            put("Sat", 6);
-            put("Sun", 7);
+            put("Mon", 0);
+            put("Tue", 1);
+            put("Wed", 2);
+            put("Thu", 3);
+            put("Fri", 4);
+            put("Sat", 5);
+            put("Sun", 6);
         }};
 }
