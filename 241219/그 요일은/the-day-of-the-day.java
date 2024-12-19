@@ -20,7 +20,7 @@ public class Main {
     private static int getDays(int m, int d){
         int days = 0;
         int[] lastDay = new int[]{31,29,31,30,31,30,31,31,30,31,30,31};
-        for(int i=0; i<m; i++){
+        for(int i=0; i<m-1; i++){
             days += lastDay[i];
         }
         return days + d;
