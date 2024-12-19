@@ -7,7 +7,7 @@ public class Main {
         
         int day1 = getDays(m1, d1);
         int day2 = getDays(m2, d2);
-        int ifMon = A.equals("Mon")? 1:0;
+        int ifMon = A.equals("Mon")? 0:0;
 
         System.out.println((day2-day1)/7 + ifMon);
     }
