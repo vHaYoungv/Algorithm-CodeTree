@@ -13,7 +13,6 @@ public class Main {
         int cnt = 0;
         if (days-startDay>=0){
             cnt = (days-startDay)/7+1;
-            if(startDay==0) {cnt -= 1;}
         }
         System.out.println(cnt);
     }
