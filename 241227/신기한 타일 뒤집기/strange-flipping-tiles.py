@@ -1,6 +1,6 @@
 n = int(input());
 comm = [];
-for i in range(4):
+for i in range(n):
     m, d = input().split(); 
     comm.append((m,d));
 
