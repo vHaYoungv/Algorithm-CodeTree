@@ -32,7 +32,7 @@ public class Main {
                 }
                 first = "A";
             }
-            if(aPosition.get(i)==bPosition.get(i)) {
+            if(aPosition.get(i).equals(bPosition.get(i))) {
                 if(!first.equals("AB")) {
                     cnt += 1;
                 }
