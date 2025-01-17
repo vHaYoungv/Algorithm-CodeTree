@@ -23,10 +23,9 @@ public class Main {
             }
         }
 
-        String first = "AB";
+        String first = "";
         int cnt = 0;
-        for(int i=0; i<aPosition.size(); i++){
-            // System.out.println(Integer.toString(i)+":"+first + ":" + aPosition.get(i) + ":" + bPosition.get(i));
+        for(int i=1; i<aPosition.size(); i++){
             if(aPosition.get(i)>bPosition.get(i)) {
                 if(!first.equals("A")) {
                     cnt += 1;
@@ -45,6 +44,7 @@ public class Main {
                 }
                 first = "B";
             }
+            // System.out.println(Integer.toString(i)+":"+first + ":" + aPosition.get(i) + ":" + bPosition.get(i));
         }
 
         System.out.println(cnt);
